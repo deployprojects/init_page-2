@@ -3,38 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>National Theatre | Welcome</title>
     <style>
         /* Google Fonts Import */
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@300;400;700&display=swap');
 
         /* General Reset */
+=======
+    <title>ZSL | Let Nature Thrive</title>
+    <!-- Google Fonts for beautiful typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset and Variables */
+        :root {
+            --primary-green: #006838;
+            --dark-green: #004d29;
+            --light-bg: #f4f7f6;
+            --text-dark: #333333;
+            --white: #ffffff;
+        }
+
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+<<<<<<< HEAD
         }
 
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f4f4f4;
             color: #333;
+=======
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
             line-height: 1.6;
         }
 
         /* Header & Navigation */
         header {
+<<<<<<< HEAD
             background-color: #000;
             color: #fff;
             padding: 20px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+=======
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
+<<<<<<< HEAD
         .logo {
             font-family: 'Playfair Display', serif;
             font-size: 26px;
@@ -46,11 +77,32 @@
         }
 
         nav ul {
+=======
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-green);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
             list-style: none;
             display: flex;
             gap: 30px;
         }
 
+<<<<<<< HEAD
         nav a {
             color: #fff;
             text-decoration: none;
@@ -63,11 +115,37 @@
 
         nav a:hover {
             color: #e50914; /* Theatre Red */
+=======
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-green);
+        }
+
+        .btn-donate {
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-donate:hover {
+            background-color: var(--dark-green);
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
         }
 
         /* Hero Section */
         .hero {
             height: 80vh;
+<<<<<<< HEAD
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                         url('https://images.unsplash.com/photo-1507676184212-d0330a15233c?auto=format&fit=crop&w=1920&q=80') center/cover;
             display: flex;
@@ -113,10 +191,39 @@
         /* What's On Section */
         .shows {
             padding: 80px 20px;
+=======
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1544626053-8985dc411ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 5%;
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
             max-width: 1200px;
             margin: 0 auto;
         }
 
+<<<<<<< HEAD
         .shows-header {
             text-align: center;
             margin-bottom: 50px;
@@ -146,15 +253,45 @@
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0,0,0,0.08);
             transition: transform 0.3s ease;
+=======
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            margin-bottom: 50px;
+        }
+
+        /* Cards Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            background-color: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
         }
 
         .card:hover {
             transform: translateY(-10px);
+<<<<<<< HEAD
+=======
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
         }
 
         .card img {
             width: 100%;
+<<<<<<< HEAD
             height: 220px;
+=======
+            height: 250px;
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
             object-fit: cover;
         }
 
@@ -163,6 +300,7 @@
         }
 
         .card-content h3 {
+<<<<<<< HEAD
             font-family: 'Playfair Display', serif;
             font-size: 1.6rem;
             margin-bottom: 10px;
@@ -190,19 +328,52 @@
         .card-content .book-btn:hover {
             background-color: #000;
             color: #fff;
+=======
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--dark-green);
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .card-content a {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--primary-green);
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .card-content a:hover {
+            border-color: var(--primary-green);
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
         }
 
         /* Footer */
         footer {
+<<<<<<< HEAD
             background-color: #000;
             color: #aaa;
             text-align: center;
             padding: 40px 20px;
             margin-top: 40px;
+=======
+            background-color: var(--dark-green);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
         }
 
         footer p {
             margin-bottom: 10px;
+<<<<<<< HEAD
         }
 
         /* Responsive */
@@ -211,6 +382,17 @@
                 display: none; /* In a real project, replace with a hamburger menu */
             }
             .hero h1 {
+=======
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Hide standard nav on mobile */
+            }
+            .hero-content h1 {
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
                 font-size: 2.5rem;
             }
         }
@@ -218,6 +400,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
     <!-- Header Section -->
     <header>
         <a href="#" class="logo">National Theatre</a>
@@ -228,11 +411,25 @@
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Support Us</a></li>
             </ul>
+=======
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">ZSL</a>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#zoos">Our Zoos</a></li>
+                <li><a href="#science">Science</a></li>
+                <li><a href="#conservation">Conservation</a></li>
+            </ul>
+            <a href="#" class="btn-donate">Donate Now</a>
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
+<<<<<<< HEAD
         <h1>World-Class Theatre for Everyone</h1>
         <p>Experience unforgettable stories, groundbreaking performances, and the magic of live theatre in the heart of London.</p>
         <a href="#shows" class="btn">See What's On</a>
@@ -273,15 +470,62 @@
                     <h3>Frankenstein</h3>
                     <p>Childlike in his innocence but grotesque in form, Frankenstein’s bewildered creature is cast out into a hostile universe.</p>
                     <a href="#" class="book-btn">Book Tickets</a>
+=======
+        <div class="hero-content">
+            <h1>Let Nature Thrive</h1>
+            <p>We are a science-driven conservation charity, working to restore wildlife in the UK and around the world.</p>
+            <a href="#zoos" class="btn-donate">Plan Your Visit</a>
+        </div>
+    </section>
+
+    <!-- Our Zoos Section -->
+    <section id="zoos">
+        <h2 class="section-title">Explore Our Zoos</h2>
+        <div class="grid-container">
+            <!-- Zoo Card 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="London Zoo Tiger">
+                <div class="card-content">
+                    <h3>London Zoo</h3>
+                    <p>Experience the magic of wildlife in the heart of the capital. Meet our incredible animals and learn about our conservation work.</p>
+                    <a href="#">Book Tickets &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- Zoo Card 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1588147573663-71a7ce3edbb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Whipsnade Zoo Elephant">
+                <div class="card-content">
+                    <h3>Whipsnade Zoo</h3>
+                    <p>Discover the UK's biggest zoo, set in 600 acres of beautiful Chiltern Hills countryside. A perfect adventure for the whole family.</p>
+                    <a href="#">Book Tickets &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- Conservation Card -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Conservation Nature">
+                <div class="card-content">
+                    <h3>Global Conservation</h3>
+                    <p>From the Thames to the deep ocean, we protect endangered species and habitats across the globe through pioneering science.</p>
+                    <a href="#">Learn More &rarr;</a>
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
                 </div>
             </div>
         </div>
     </section>
 
+<<<<<<< HEAD
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2026 National Theatre. All rights reserved.</p>
         <p>Upper Ground, London SE1 9PX</p>
+=======
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Zoological Society of London (ZSL). All rights reserved.</p>
+        <p>A charity registered in England and Wales.</p>
+>>>>>>> d9613f051b6041faf99aa6a2841905abe72b3d30
     </footer>
 
 </body>
